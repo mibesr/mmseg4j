@@ -33,6 +33,7 @@ public class MMSegTokenizer extends Tokenizer {
 		//lucene 4.0
 		//org.apache.lucene.analysis.Tokenizer.setReader(Reader)
 		//setReader 自动被调用, input 自动被设置。
+		super.reset();
 		mmSeg.reset(input);
 	}
 
